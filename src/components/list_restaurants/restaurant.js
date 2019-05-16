@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { Box, Column, Icon } from "rbx";
 import { Link } from "react-router-dom";
 
@@ -21,10 +21,10 @@ const Restaurant = props => (
             <span className="dashed_box">Entrega R$ {props.delivery_tax}</span>
           </Column>
           <Column size={3} id="reviews">
-            <Icon size="medium" color="warning">
-              <FaStar />
+            <Icon size="medium" color="danger">
+              <FaHeart />
             </Icon>
-            <span className="has-text-warning has-text-weight-bold">
+            <span className="has-text-danger has-text-weight-bold">
               {props.review || 0}
             </span>
           </Column>
